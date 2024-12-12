@@ -11,7 +11,16 @@ import {
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
+  BuymeacoffeeIcon,
 } from '@/components/SocialIcons'
+
+import {
+  GithubLogo,
+  XLogo,
+  Coffee,
+  WechatLogo
+} from '@phosphor-icons/react'
+
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -285,35 +294,31 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Leader, artist, and frontend enthusiast in Austin, TX.
+          Product Manager, AI Dreamer, and a Startup Co-founder in China.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I&apos;m Victoria, a computer science student and the Founder and
-            President of Girls Who Code at Texas State University. I am
-            passionate about frontend engineering, empowering women in tech, and
-            creating inclusive spaces for beginners in computer science.
+          I&apos;m Joey hu, an internet product manager, co-founder. Passionate about AI product, I balance my professional drive with a love for travel. I enjoy both the comfort of home and the excitement of exploring the world.
           </p>
           <div className="mt-6 flex gap-6">
+            <SocialLink
+              href="https://twitter.com/lizhaoshui"
+              aria-label="Follow on Twitter"
+              icon={TwitterIcon}
+            />
             <SocialLink
               href="https://github.com/vjordan-cs"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
-            <SocialLink
+            {/* <SocialLink
               href="https://linkedin.com/in/victoria-jordan01/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
-            />
-
+            /> */}
             {/* <SocialLink
               href="https://www.instagram.com/vjordan.cs/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
-            /> */}
-            {/* <SocialLink
-              href="https://twitter.com/cs__victoria"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
             /> */}
           </div>
         </div>
@@ -321,13 +326,13 @@ export default function Home({ articles }) {
       <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          {/* <div className="flex flex-col gap-16">
+          <div className="flex flex-col gap-16">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
-          </div> */}
+          </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            {/* <Newsletter /> */}
+            <Newsletter />
             <Resume />
           </div>
         </div>

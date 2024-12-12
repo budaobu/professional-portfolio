@@ -29,7 +29,7 @@ export default function Uses() {
   return (
     <>
       <Head>
-        <title>Uses - Spencer Sharp</title>
+        <title>Uses - Joey Hu</title>
         <meta
           name="description"
           content="Software I use, gadgets I love, and other things I recommend."
@@ -42,23 +42,23 @@ export default function Uses() {
         <div className="space-y-20">
           <ToolsSection title="Workstation">
             <Tool title="MacBook Pro (2015)">
-              I have used this Macbook Pro for more than 9 years. Maybe it should be retired, but it still works..
+              I have used this Macbook Pro for more than 9 years. 
+              Maybe it should be retired, but it still works.
             </Tool>
             <Tool title="iPhone 14">
-              I primarily use an iPhone 14, which combines powerful performance, advanced camera features, and a sleek design..
-            </Tool>
-            <Tool title="IBM Model M SSK Industrial Keyboard">
-              They don’t make keyboards the way they used to. I buy these any
-              time I see them go up for sale and keep them in storage in case I
-              need parts or need to retire my main.
+              I primarily use an iPhone 14, which combines powerful performance, 
+              advanced camera features, and a sleek design.
             </Tool>
             <Tool title="Redmi Note 10 Pro">
-              As my backup device, the Redmi Note 10 Pro offers a solid Android experience at an affordable price.
+              As my backup device, the Redmi Note 10 Pro offers a solid Android 
+              experience at an affordable price.
             </Tool>
           </ToolsSection>
           <ToolsSection title="Design">
             <Tool title="Modao">
-              For product prototyping, I rely on Modao, a comprehensive UI/UX design tool that enables rapid and intuitive interface wireframing and interactive prototype creation.
+              For product prototyping, I rely on Modao, a comprehensive UI/UX 
+              design tool that enables rapid and intuitive interface wireframing 
+              and interactive prototype creation.
             </Tool>
             <Tool title="Figma">
               We started using Figma as just a design tool but now it’s become
@@ -68,7 +68,12 @@ export default function Uses() {
           </ToolsSection>
           <ToolsSection title="Productivity">
             <Tool title="Typora">
-              A minimalist yet powerful Markdown editor that provides a seamless WYSIWYG writing experience. With real-time preview and a clean interface, Typora transforms writing into a natural and enjoyable process. Whether you're working on technical documentation, personal notes, or blog posts, Typora offers a smooth writing environment that simplifies markdown editing.
+              A minimalist yet powerful Markdown editor that provides a seamless 
+              WYSIWYG writing experience. With real-time preview and a clean 
+              interface, Typora transforms writing into a natural and enjoyable 
+              process. Whether you're working on technical documentation, personal 
+              notes, or blog posts, Typora offers a smooth writing environment 
+              that simplifies markdown editing.
             </Tool>
           </ToolsSection>
         </div>

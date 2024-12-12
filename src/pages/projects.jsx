@@ -11,16 +11,16 @@ import logoHeart from '@/images/logos/gwc.png'
 
 const projects = [
   {
-    name: 'YOUphoria: A comprehensive sex education app for teens',
+    name: '买电车还是油车',
     description:
-      "YOUphoria is built with Flutter and Firebase Authentication for seamless user experience and secure data handling. Google Maps API provides location-based resources, and ChatGPT API is leveraged to create an inclusive, age-appropriate AI chatbot, addressing teens' nuanced questions with personalized responses.",
+      "一个帮助用户决定是否购买电动汽车的工具。通过考虑多个因素，如年行驶里程、充电条件、使用场景等，为用户提供建议。",
     link: {
-      href: 'https://github.com/halcyonCore/youphoria',
-      label: 'GitHub',
+      href: 'https://fuel-or-elec-car.dakaiai.app/',
+      label: 'https://fuel-or-elec-car.dakaiai.app/',
     },
-    logo: youphoria,
+    // logo: youphoria,
   },
-  {
+/*   {
     name: 'Tailwind Animation Exploration',
     description:
       'Leveraging Tailwind CSS, this captivating one-page project showcases mesmerizing animations and innovative blend modes for striking color and movement',
@@ -46,7 +46,7 @@ const projects = [
       label: 'cpp-vs-java.vercel.app',
     },
     logo: logoAnimaginary,
-  },
+  }, */
   // {
   //   name: 'OpenShuttle',
   //   description:
@@ -71,7 +71,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Victoria Jordan</title>
+        <title>Projects - Jeoy Hu</title>
         <meta
           name="description"
           content="Things I’ve made trying to put my dent in the universe."

@@ -13,14 +13,6 @@ import {
   LinkedInIcon,
   BuymeacoffeeIcon,
 } from '@/components/SocialIcons'
-
-import {
-  GithubLogo,
-  XLogo,
-  Coffee,
-  WechatLogo
-} from '@phosphor-icons/react'
-
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'

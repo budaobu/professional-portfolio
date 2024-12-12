@@ -241,16 +241,16 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>Joey Hu - Product Manager, AI Dreamer, and a Startup Co-founder</title>
+        <title>Joey Hu - A Product Manager, AI Dreamer</title>
         <meta
           name="description"
-          content="I'm Joey Hu. A product manager, AI dreamer, and a co-founder"
+          content="I'm Joey Hu. A product manager, AI dreamer"
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          Product Manager, AI Dreamer, and a Startup Co-founder in China.
+          Product Manager, AI Dreamer, and a Startup Co-founder.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
           I&apos;m Joey hu, an internet product manager, co-founder. Passionate about AI product, I balance my professional drive with a love for travel. I enjoy both the comfort of home and the excitement of exploring the world.

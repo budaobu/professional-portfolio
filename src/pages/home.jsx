@@ -145,15 +145,22 @@ function Resume() {
       company: 'Juheng',
       title: 'Product Manager',
       logo: amazonIcon,
-      start: 'Feb 2011',
+      start: '2011',
       end: 'Present',
     },
     {
       company: 'Linhe',
       title: 'Co-Founder',
       logo: halcyoncore,
-      start: 'Dec 2015',
+      start: '2015',
       end: 'Present',
+    },
+    {
+      company: 'Shenyang Normal University',
+      title: 'Computer Science and Technology',
+      logo: halcyoncore,
+      start: '2005',
+      end: '2009',
     },
   ]
 
@@ -161,7 +168,7 @@ function Resume() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">Work and Education</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (

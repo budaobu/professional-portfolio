@@ -17,7 +17,7 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import synuIcon from '@/images/logos/synuIcon.webp'
+import synuIcon from '@/images/logos/synuIcon.png'
 import juhengIcon from '@/images/logos/juhengIcon.png'
 import linheIcon from '@/images/logos/linheIcon.png'
 

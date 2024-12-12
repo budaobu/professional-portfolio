@@ -71,7 +71,7 @@ export default function Uses() {
               A minimalist yet powerful Markdown editor that provides a seamless 
               WYSIWYG writing experience. With real-time preview and a clean 
               interface, Typora transforms writing into a natural and enjoyable 
-              process. Whether you're working on technical documentation, personal 
+              process. Whether you&apos;re working on technical documentation, personal 
               notes, or blog posts, Typora offers a smooth writing environment 
               that simplifies markdown editing.
             </Tool>

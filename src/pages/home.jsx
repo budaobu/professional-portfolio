@@ -11,7 +11,6 @@ import {
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
-  BuymeacoffeeIcon,
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
@@ -277,11 +276,6 @@ export default function Home({ articles }) {
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             /> */}
-            <SocialLink
-              href="https://buymeacoffee.com/lizhaoshui"
-              aria-label="Buy me a coffee"
-              icon={BuymeacoffeeIcon}
-            />
           </div>
         </div>
       </Container>

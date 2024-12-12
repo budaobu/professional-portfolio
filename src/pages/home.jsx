@@ -143,53 +143,18 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Amazon',
-      title: 'Software Engineering Intern',
+      company: 'Juheng',
+      title: 'Product Manager',
       logo: amazonIcon,
-      start: 'May 2023',
-      end: 'Aug 2023',
+      start: 'Feb 2011',
+      end: 'Present',
     },
     {
-      company: 'HalcyonCore',
-      title: 'Co-Founder & Lead Engineer',
+      company: 'Linhe',
+      title: 'Co-Founder',
       logo: halcyoncore,
-      start: 'March 2023',
+      start: 'Dec 2015',
       end: 'Present',
-    },
-    {
-      company: 'Texas State VR Lab',
-      title: 'Virtual Reality Researcher',
-      logo: logoTXST,
-      start: 'Jan 2023',
-      end: 'Present',
-    },
-    {
-      company: 'Girls Who Code TXST',
-      title: 'Founder & President',
-      logo: logoGWC,
-      start: 'Feb 2022',
-      end: 'Present',
-    },
-    {
-      company: 'FYPM App',
-      title: 'Front End Engineer Intern',
-      logo: logoFYPM,
-      start: 'April 2022',
-      end: 'July 2022',
-    },
-    {
-      company: 'Dell Technologies',
-      title: 'Software Engineer Intern',
-      logo: logoDell,
-      start: 'June 2022',
-      end: 'Aug 2022',
-    },
-    {
-      company: 'Dell Technologies',
-      title: 'Software Engineer Intern',
-      logo: logoDell,
-      start: 'May 2021',
-      end: 'Aug 2021',
     },
   ]
 
@@ -277,10 +242,10 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>Victoria Jordan - Leader, artist, and frontend enthusiast</title>
+        <title>Joey Hu - Product Manager, AI Dreamer, and a Startup Co-founder</title>
         <meta
           name="description"
-          content="I'm Victoria Jordan. A leader, artist, and frontend enthusiast"
+          content="I'm Joey Hu. A product manager, AI dreamer, and a co-founder"
         />
       </Head>
       <Container className="mt-9">
@@ -297,21 +262,26 @@ export default function Home({ articles }) {
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
-            <SocialLink
+            {/* <SocialLink
               href="https://github.com/vjordan-cs"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
-            {/* <SocialLink
-              href="https://linkedin.com/in/victoria-jordan01/"
+            <SocialLink
+              href="https://linkedin.com/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             /> */}
             {/* <SocialLink
-              href="https://www.instagram.com/vjordan.cs/"
+              href="https://www.instagram.com/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             /> */}
+            <SocialLink
+              href="https://buymeacoffee.com/lizhaoshui"
+              aria-label="Buy me a coffee"
+              icon={BuymeacoffeeIcon}
+            />
           </div>
         </div>
       </Container>

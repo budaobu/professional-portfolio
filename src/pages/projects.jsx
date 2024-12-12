@@ -1,8 +1,10 @@
 import Image from 'next/future/image'
 import Head from 'next/head'
 
+import { useState } from 'react';
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import defaultIcon from '@/images/logos/defaultIcon.svg'
 import logoAnimaginary from '@/images/logos/animaginary.svg'
 import youphoria from '@/images/logos/YOUphoria.png'
 import orb from '@/images/logos/orb.gif'
@@ -94,9 +96,9 @@ export default function Projects() {
                   className="h-8 w-8 rounded-full"
                   unoptimized
                   onError={(e) => {
-                    // 如果 favicon 加载失败，可以设置一个默认图标
-                    e.target.src = '/default/favicon.png';
+                    e.currentTarget.src = defaultIcon;
                   }}
+                  key={`favicon-${project.name}`}
                 />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">

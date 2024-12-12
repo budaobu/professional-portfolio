@@ -17,12 +17,9 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import logoDell from '@/images/logos/dell.svg'
-import logoFYPM from '@/images/logos/fypm1.svg'
-import logoGWC from '@/images/logos/gwcLogo1.png'
-import logoTXST from '@/images/logos/txstStar.png'
-import halcyoncore from '@/images/logos/hc-logo.png'
-import amazonIcon from '@/images/logos/amazonlogo.png'
+import synuIcon from '@/images/logos/synuIcon.webp'
+import juhengIcon from '@/images/logos/juhengIcon.png'
+import linheIcon from '@/images/logos/linheIcon.png'
 
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -144,21 +141,21 @@ function Resume() {
     {
       company: 'Juheng',
       title: 'Product Manager',
-      logo: amazonIcon,
+      logo: juhengIcon,
       start: '2011',
       end: 'Present',
     },
     {
       company: 'Linhe',
       title: 'Co-Founder',
-      logo: halcyoncore,
+      logo: linheIcon,
       start: '2015',
       end: 'Present',
     },
     {
       company: 'Shenyang Normal University',
       title: 'Computer Science and Technology',
-      logo: halcyoncore,
+      logo: synuIcon,
       start: '2005',
       end: '2009',
     },

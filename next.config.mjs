@@ -20,6 +20,9 @@ const nextConfig = {
       },
     ]
   },
+  images: {
+    domains: ['img.dakaiai.app', 'static.dakaiai.app'],  // 允许外链图片域名
+  },
 }
 
 const withMDX = nextMDX({

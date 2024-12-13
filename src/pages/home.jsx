@@ -7,19 +7,22 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
-  TwitterIcon,
+  XIcon,
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
+  TelegramIcon,
+  BuymeacoffeeIcon,
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import synuIcon from '@/images/logos/synuIcon.png'
-import juhengIcon from '@/images/logos/juhengIcon.png'
-import linheIcon from '@/images/logos/linheIcon.png'
+import educationIcon from '@/images/logos/graduation.svg'
+import studentIcon from '@/images/logos/student.svg'
+import buildingIcon from '@/images/logos/building-2.svg'
+import routerIcon from '@/images/logos/router.svg'
 
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -141,21 +144,21 @@ function Resume() {
     {
       company: 'Juheng',
       title: 'Product Manager',
-      logo: juhengIcon,
+      logo: buildingIcon,
       start: '2011',
       end: 'Present',
     },
     {
       company: 'Linhe',
       title: 'Co-Founder',
-      logo: linheIcon,
+      logo: routerIcon,
       start: '2015',
       end: 'Present',
     },
     {
       company: 'Shenyang Normal University',
       title: 'Computer Science and Technology',
-      logo: synuIcon,
+      logo: studentIcon,
       start: '2005',
       end: '2009',
     },
@@ -262,8 +265,8 @@ export default function Home({ articles }) {
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://x.com/intent/follow?screen_name=lizhaoshui"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
+              aria-label="Follow on X"
+              icon={XIcon}
             />
             {/* <SocialLink
               href="https://github.com/vjordan-cs"
@@ -280,6 +283,11 @@ export default function Home({ articles }) {
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             /> */}
+            <SocialLink
+              href="https://buymeacoffee.com/lizhaoshui"
+              aria-label="Buy me a coffee"
+              icon={BuymeacoffeeIcon}
+            />
           </div>
         </div>
       </Container>

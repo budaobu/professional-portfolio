@@ -245,10 +245,10 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>Joey Hu - A Product Manager, AI Dreamer</title>
+        <title>Joey Hu - a prompt engineer, product manager.</title>
         <meta
           name="description"
-          content="I'm Joey Hu. A product manager, AI dreamer"
+          content="I'm Joey Hu. a prompt engineer, product manager."
         />
       </Head>
       <Container className="mt-9">
@@ -257,11 +257,11 @@ export default function Home({ articles }) {
           Product Manager, AI Dreamer, and a Startup Co-founder.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I&apos;m Joey hu, an internet product manager, co-founder. Passionate about AI product, I balance my professional drive with a love for travel. I enjoy both the comfort of home and the excitement of exploring the world.
+          I&apos;m Joey hu, a prompt engineer, product manager. Passionate about AI product, I balance my professional drive with a love for travel. I enjoy both the comfort of home and the excitement of exploring the world.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com/lizhaoshui"
+              href="https://x.com/intent/follow?screen_name=lizhaoshui"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />

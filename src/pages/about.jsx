@@ -71,7 +71,7 @@ export default function About() {
                 nuanced aspects of life. 
               </p>
               <p>
-                You&apos;re managing Joey Hu's personal website, diving into AI coding, 
+                You&apos;re managing Joey Hu&apos;s personal website, diving into AI coding, 
                 and committed to giving this site a killer makeover. 
               </p>
               <p>

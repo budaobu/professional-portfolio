@@ -76,12 +76,12 @@ export default function Projects() {
         <title>Projects - Jeoy Hu</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="The bridges I've tried to build between ideas and action."
         />
       </Head>
       <SimpleLayout
-        title="A couple of my favorite personal projects."
-        intro="This summer, I learned about the trifecta that is React, Next.js, and TailwindCSS. I haven't looked back since!"
+        title="Digital playground, turning creativity into reality."
+        intro="Rapid prototypes engineered through creative problem-solving and AI collaboration."
       >
         <ul
           role="list"

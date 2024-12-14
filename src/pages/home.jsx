@@ -14,7 +14,7 @@ import {
   TelegramIcon,
   BuymeacoffeeIcon,
 } from '@/components/SocialIcons'
-import { Briefcase, Student, Network, Building } from '@phosphor-icons/react'
+import { Briefcase, Student, Network, Building, GraduationCap, DownloadSimple, EnvelopeSimple } from '@phosphor-icons/react'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -29,7 +29,7 @@ import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
 
-function MailIcon(props) {
+/* function MailIcon(props) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -50,9 +50,9 @@ function MailIcon(props) {
       />
     </svg>
   )
-}
+} */
 
-function BriefcaseIcon(props) {
+/* function BriefcaseIcon(props) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -73,9 +73,9 @@ function BriefcaseIcon(props) {
       />
     </svg>
   )
-}
+} */
 
-function EducationIcon(props) {
+/* function EducationIcon(props) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -91,9 +91,9 @@ function EducationIcon(props) {
       />
     </svg>
   )
-}
+} */
 
-function ArrowDownIcon(props) {
+/* function ArrowDownIcon(props) {
   return (
     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
       <path
@@ -104,7 +104,7 @@ function ArrowDownIcon(props) {
       />
     </svg>
   )
-}
+} */
 
 function Article({ article }) {
   return (
@@ -136,7 +136,7 @@ function Newsletter() {
       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <MailIcon className="h-6 w-6 flex-none" />
+        <EnvelopeSimple size={24} color="#a1a1aa" weight="duotone" className="h-6 w-6 flex-none" />
         <span className="ml-3">Stay up to date</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
@@ -180,7 +180,7 @@ function Resume() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         {/* <BriefcaseIcon className="h-6 w-6 flex-none" /> */}
-        <Briefcase size={24}  weight="duotone" className="h-6 w-6 flex-none" />
+        <Briefcase size={24} color="#a1a1aa" weight="duotone" className="h-6 w-6 flex-none" />
         <span className="ml-3">Work</span>
       </h2>
       <ol className="mt-6 space-y-4">
@@ -193,7 +193,7 @@ function Resume() {
                 className="h-7 w-7 rounded-full"
                 unoptimized
               /> */}
-              <role.logo size={24}  weight="duotone" className="h-7 w-7 rounded-full" />
+              <role.logo size={24} color="#a1a1aa" weight="duotone" className="h-7 w-7 rounded-full" />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
@@ -225,7 +225,7 @@ function Resume() {
       </ol>
       {/* <Button href="#" variant="secondary" className="group mt-6 w-full">
         Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+        <DownloadSimple size={24} color="#a1a1aa" weight="duotone" className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button> */}
     </div>
   )
@@ -236,7 +236,7 @@ function Education() {
     {
       school: 'Shenyang Normal University',
       title: 'Computer Science and Technology',
-      logo: studentIcon,
+      logo: Student,
       start: '2005',
       end: '2009',
     },
@@ -245,19 +245,14 @@ function Education() {
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <educationIcon className="h-6 w-6 flex-none" />
+        <GraduationCap size={24} color="#a1a1aa" weight="duotone" className="h-6 w-6 flex-none" />
         <span className="ml-3">Education</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {education.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image
-                src={role.logo}
-                alt=""
-                className="h-7 w-7 rounded-full"
-                unoptimized
-              />
+              <role.logo size={24} color="#a1a1aa" weight="duotone" className="h-7 w-7 rounded-full" />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">School</dt>
@@ -289,7 +284,7 @@ function Education() {
       </ol>
       {/* <Button href="#" variant="secondary" className="group mt-6 w-full">
         Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+        <DownloadSimple size={24} color="#a1a1aa" weight="duotone" className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button> */}
     </div>
   )

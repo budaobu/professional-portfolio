@@ -34,7 +34,7 @@ function Appearance({ title, href, description, cta = "Check it out here" }) {
       </Card.Title> */}
       <Card.Title as="h3">
         {href ? (
-          <a href={href} rel="nofollow noopener noreferrer">
+          <a href={href} rel="nofollow noopener noreferrer" target="_blank">
             {title}
           </a>
         ) : (

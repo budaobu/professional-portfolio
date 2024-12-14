@@ -21,7 +21,7 @@ const nextConfig = {
     ]
   },
   images: {
-    domains: ['img.dakaiai.app', 'static.dakaiai.app'],  // 允许外链图片域名
+    domains: ['img.dakaiai.app', 'static.dakaiai.app', 'favicon.im'],  // 允许外链图片域名
   },
 }
 

@@ -25,12 +25,21 @@ function ToolsSection({ children, ...props }) {
 function Appearance({ title, href, description, cta = "Check it out here" }) {
   return (
     <Card as="article">
-      <Card.Title 
+      {/* <Card.Title 
         as="h3" 
         href={href} 
         rel="nofollow noopener noreferrer"
       >
         {title}
+      </Card.Title> */}
+      <Card.Title as="h3">
+        {href ? (
+          <a href={href} rel="nofollow noopener noreferrer">
+            {title}
+          </a>
+        ) : (
+          title
+        )}
       </Card.Title>
       <Card.Description>{description}</Card.Description>
       {href && (

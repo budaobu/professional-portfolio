@@ -14,7 +14,7 @@ import {
   TelegramIcon,
   BuymeacoffeeIcon,
 } from '@/components/SocialIcons'
-import { Briefcase, Student, Router, Building } from '@phosphor-icons/react'
+import { Briefcase, Student, Network, Building } from '@phosphor-icons/react'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'

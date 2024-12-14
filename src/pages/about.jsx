@@ -10,6 +10,15 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
+import {
+  EnvelopeSimple,
+  XLogo,
+  InstagramLogo,
+  GithubLogo,
+  TelegramLogo,
+  LinkedinLogo,
+  Coffee,
+} from '@phosphor-icons/react'
 import portraitImage from '@/images/portrait.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
@@ -26,7 +35,7 @@ function SocialLink({ className, href, children, icon: Icon }) {
   )
 }
 
-function MailIcon(props) {
+/* function MailIcon(props) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
       <path
@@ -35,7 +44,7 @@ function MailIcon(props) {
       />
     </svg>
   )
-}
+} */
 
 export default function About() {
   return (
@@ -105,7 +114,14 @@ export default function About() {
               </SocialLink> */}
               <SocialLink
                 href="mailto:lizhaoshui@duck.com"
-                icon={MailIcon}
+                icon={(iconProps) => (
+                  <EnvelopeSimple 
+                    size={24} 
+                    color="#a1a1aa" 
+                    weight="duotone"
+                    {...iconProps}
+                  />
+                )}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
                 lizhaoshui@duck.com

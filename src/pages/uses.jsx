@@ -15,27 +15,29 @@ function ToolsSection({ children, ...props }) {
 }
 
 function Tool({ title, href, children }) {
-  return (
-    <Card as="li">
-      <Card.Title as="h3">
-        {href ? (
-          <a href={href} target="_blank" rel="noopener noreferrer">{title}</a>
-        ) : (
-          title // 如果没有 href，直接显示标题
-        )}
-      </Card.Title>
-      <Card.Description>
-        {children}
-        {href && (
-          <div className="mt-2">
-            <a href={href} target="_blank" rel="noopener noreferrer" className="text-blue-500">
-              Check it out here
-            </a>
-          </div>
-        )}
-      </Card.Description>
-    </Card>
+  const content = (
+    <>
+      <Card.Title as="h3">{title}</Card.Title>
+      <Card.Description>{children}</Card.Description>
+      {href && (
+        <Card.Cta>Check it out here</Card.Cta>
+      )}
+    </>
   )
+
+  // 如果有 href，则将整个 Card 包裹在 a 标签里
+  if (href) {
+    return (
+      <Card as="li" className="cursor-pointer">
+        <a href={href} target="_blank" rel="noopener noreferrer" className="block">
+          {content}
+        </a>
+      </Card>
+    )
+  }
+
+  // 如果没有 href，正常显示 Card
+  return <Card as="li">{content}</Card>
 }
 
 export default function Uses() {
@@ -54,7 +56,7 @@ export default function Uses() {
       >
         <div className="space-y-20">
           <ToolsSection title="Workstation">
-            <Tool title="MacBook Pro (2015)" href="https://www.apple.com/macbook-pro-13/">
+            <Tool title="MacBook Pro (2015)">
               I have used this Macbook Pro for more than 9 years. 
               Maybe it should be retired, but it still works.
             </Tool>

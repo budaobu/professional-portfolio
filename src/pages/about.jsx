@@ -4,12 +4,12 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import {
+/* import {
   XIcon,
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
-} from '@/components/SocialIcons'
+} from '@/components/SocialIcons' */
 import {
   EnvelopeSimple,
   XLogo,
@@ -92,7 +92,17 @@ export default function About() {
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="https://x.com/intent/follow?screen_name=lizhaoshui" icon={XIcon}>
+              <SocialLink
+                href="https://x.com/intent/follow?screen_name=lizhaoshui"
+                icon={(iconProps) => (
+                  <XLogo 
+                    size={24} 
+                    color="#a1a1aa" 
+                    weight="duotone"
+                    {...iconProps}
+                  />
+                )}
+              >
                 Follow on X
               </SocialLink>
               {/* <SocialLink href="#" icon={InstagramIcon} className="mt-4">
@@ -100,14 +110,28 @@ export default function About() {
               </SocialLink> */}
               <SocialLink
                 href="#"
-                icon={GitHubIcon}
+                icon={(iconProps) => (
+                  <GithubLogo 
+                    size={24} 
+                    color="#a1a1aa" 
+                    weight="duotone"
+                    {...iconProps}
+                  />
+                )}
                 className="mt-4"
               >
                 Follow on GitHub
               </SocialLink>
               {/* <SocialLink
                 href="#"
-                icon={LinkedInIcon}
+                icon={(iconProps) => (
+                  <LinkedinLogo 
+                    size={24} 
+                    color="#a1a1aa" 
+                    weight="duotone"
+                    {...iconProps}
+                  />
+                )}
                 className="mt-4"
               >
                 Follow on LinkedIn

@@ -5,11 +5,11 @@ import { useState } from 'react';
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import defaultIcon from '@/images/logos/defaultIcon.svg'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
+/* import logoAnimaginary from '@/images/logos/animaginary.svg'
 import youphoria from '@/images/logos/YOUphoria.png'
 import orb from '@/images/logos/orb.gif'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoHeart from '@/images/logos/gwc.png'
+import logoHeart from '@/images/logos/gwc.png' */
 
 const projects = [
   {

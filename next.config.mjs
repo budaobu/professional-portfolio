@@ -6,9 +6,9 @@ import rehypePrism from '@mapbox/rehype-prism'
 const nextConfig = {
   pageExtensions: ['jsx', 'mdx'],
   reactStrictMode: true,
-  swcMinify: true,
+  // swcMinify: true,
   experimental: {
-    newNextLinkBehavior: true,
+    // newNextLinkBehavior: true,
     scrollRestoration: true,
   },
   async redirects() {
@@ -21,7 +21,18 @@ const nextConfig = {
     ]
   },
   images: {
-    domains: ['img.dakaiai.app', 'static.dakaiai.app', 'favicon.im'],  // 允许外链图片域名
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.dakaiai.app',
+      },
+      // 如果您还需要其他的主机名模式，可以继续添加
+      {
+        protocol: 'https',
+        hostname: 'favicon.im',
+      },
+      // 如果您需要允许所有的 HTTPS 源，可以使用通配符
+    ],
   },
 }
 

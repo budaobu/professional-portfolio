@@ -1,5 +1,3 @@
-"use client"
-
 import { Container } from '@/components/Container'
 
 export function SimpleLayout({ title, intro, children }) {

@@ -1,8 +1,5 @@
-"use client"
-
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { useEffect } from 'react'
 
 import { ArrowLeft } from 'lucide-react'
 import { Container } from '@/components/Container'

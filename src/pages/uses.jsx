@@ -4,6 +4,16 @@ import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
+/* function ToolsSection({ children, ...props }) {
+  return (
+    <Section {...props}>
+      <ul role="list" className="space-y-16">
+        {children}
+      </ul>
+    </Section>
+  )
+} */
+
 function ToolsSection({ children, ...props }) {
   return (
     <Section {...props}>
@@ -15,15 +25,14 @@ function ToolsSection({ children, ...props }) {
 function Appearance({ title, href, description, cta = "Check it out here" }) {
   return (
     <Card as="article">
-      <Card.Title as="h3"
-        href={href}
-        // 通过扩展属性传递额外的属性
-        {...(href ? { 
-          rel: "nofollow noopener noreferrer", 
-          target: "_blank" 
-        } : {})}
-      >
-        {title}
+      <Card.Title as="h3">
+        {href ? (
+          <a href={href} rel="nofollow noopener noreferrer" target="_blank">
+            {title}
+          </a>
+        ) : (
+          title
+        )}
       </Card.Title>
       <Card.Description>{description}</Card.Description>
       {href && (
@@ -103,7 +112,7 @@ export default function Uses() {
           <ToolsSection title="Productivity">
             <Appearance
               title="Typora"
-              href="https://typora.io"
+              href="https://typora.io/"
               description="I use Typora for seamless markdown editing. Its minimalist design and
               real-time preview make writing a smooth and enjoyable process, whether
               I&apos;m working on documentation, notes, or blog posts."

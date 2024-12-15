@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useEffect } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 

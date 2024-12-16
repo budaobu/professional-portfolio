@@ -15,16 +15,6 @@ function ToolsSection({ children, ...props }) {
 function Appearance({ title, href, description, cta = "Check it out here" }) {
   return (
     <Card as="article">
-      {/* <Card.Title as="h3"
-        href={href}
-        // 通过扩展属性传递额外的属性
-        {...(href ? { 
-          rel: "nofollow noopener noreferrer", 
-          target: "_blank" 
-        } : {})}
-      >
-        {title}
-      </Card.Title> */}
       <Card.Title as="h3">
         {href ? (
           <Card.Link 

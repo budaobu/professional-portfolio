@@ -15,8 +15,14 @@ function SpeakingSection({ children, ...props }) {
 function Appearance({ title, description, event, cta, href }) {
   return (
     <Card as="article">
-      <Card.Title as="h3" href={href}>
-        {title}
+      <Card.Title as="h3">
+        <Card.Link 
+          href={href} 
+          rel="nofollow noopener noreferrer" 
+          target="_blank"
+        >
+          {title}
+        </Card.Link>
       </Card.Title>
       <Card.Eyebrow decorate>{event}</Card.Eyebrow>
       <Card.Description>{description}</Card.Description>

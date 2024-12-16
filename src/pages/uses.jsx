@@ -15,7 +15,7 @@ function ToolsSection({ children, ...props }) {
 function Appearance({ title, href, description, cta = "Check it out here" }) {
   return (
     <Card as="article">
-      <Card.Title as="h3"
+      {/* <Card.Title as="h3"
         href={href}
         // 通过扩展属性传递额外的属性
         {...(href ? { 
@@ -24,6 +24,19 @@ function Appearance({ title, href, description, cta = "Check it out here" }) {
         } : {})}
       >
         {title}
+      </Card.Title> */}
+      <Card.Title as="h3">
+        {href ? (
+          <Link 
+            href={href} 
+            rel="nofollow noopener noreferrer" 
+            target="_blank"
+          >
+            {title}
+          </Link>
+        ) : (
+          title
+        )}
       </Card.Title>
       <Card.Description>{description}</Card.Description>
       {href && (

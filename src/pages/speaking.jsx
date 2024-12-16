@@ -16,13 +16,17 @@ function Appearance({ title, description, event, cta, href }) {
   return (
     <Card as="article">
       <Card.Title as="h3">
-        <Card.Link 
-          href={href} 
-          rel="nofollow noopener noreferrer" 
-          target="_blank"
-        >
-          {title}
-        </Card.Link>
+        {href ? (
+          <Card.Link 
+            href={href} 
+            rel="nofollow noopener noreferrer" 
+            target="_blank"
+          >
+            {title}
+          </Card.Link>
+        ) : (
+          title
+        )}
       </Card.Title>
       <Card.Eyebrow decorate>{event}</Card.Eyebrow>
       <Card.Description>{description}</Card.Description>

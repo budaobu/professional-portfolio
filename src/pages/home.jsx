@@ -26,6 +26,7 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
+import image5 from '@/images/photos/image-6.jpg'
 
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -238,13 +239,13 @@ function Education() {
 } */
 
 function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2', '-rotate-2']
 
   return (
     <div className="mt-16 sm:mt-20">
       <div className="overflow-x-auto scrollbar-hide -my-4 py-4">
         <div className="flex gap-5 sm:gap-8">
-          {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+          {[image1, image2, image3, image4, image5, image6].map((image, imageIndex) => (
             <div
               key={image.src}
               className={clsx(

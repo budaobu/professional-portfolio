@@ -28,7 +28,6 @@ export function Footer() {
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Joey Hu. Web is Awesome, Web is Best.
-                reserved.
               </p>
             </div>
           </Container.Inner>

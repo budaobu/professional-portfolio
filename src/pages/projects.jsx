@@ -8,6 +8,16 @@ import { Link, FolderGit2 } from 'lucide-react'
 
 const projects = [
   {
+    name: 'Turn Office file to Markdown',
+    description:
+      "A browser-based web app built with Next.js, using the Markitdown library to convert Office files to Markdown effortlessly.",
+    link: {
+      href: 'https://markitdown.dakaiai.app/',
+      label: 'https://markitdown.dakaiai.app/',
+    },
+    // logo: youphoria,
+  },
+  {
     name: '买电车还是油车',
     description:
       "一个帮助用户决定是否购买电动汽车的工具。通过考虑多个因素，如年行驶里程、充电条件、使用场景等，为用户提供建议。",

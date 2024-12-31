@@ -34,7 +34,7 @@ import { formatDate } from '@/lib/formatDate'
 
 
 
-function Article({ article }) {
+/* function Article({ article }) {
   return (
     <Card as="article">
       <Card.Title href={`/articles/${article.slug}`}>
@@ -47,7 +47,7 @@ function Article({ article }) {
       <Card.Cta>Read article</Card.Cta>
     </Card>
   )
-}
+} */
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
@@ -57,7 +57,7 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
-function Newsletter() {
+/* function Newsletter() {
   return (
     <form
       action="/thank-you"
@@ -84,7 +84,7 @@ function Newsletter() {
       </div>
     </form>
   )
-}
+} */
 
 function Resume() {
   let resume = [
@@ -152,7 +152,7 @@ function Resume() {
   )
 }
 
-function Education() {
+/* function Education() {
   let education = [
     {
       school: 'Shenyang Normal University',
@@ -203,13 +203,9 @@ function Education() {
           </li>
         ))}
       </ol>
-      {/* <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
-        <DownloadSimple size={24} color="#a1a1aa" weight="duotone" className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button> */}
     </div>
   )
-}
+} */
 
 /* function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2', '-rotate-2']

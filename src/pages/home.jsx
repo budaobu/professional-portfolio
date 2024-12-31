@@ -34,7 +34,7 @@ import { formatDate } from '@/lib/formatDate'
 
 
 
-/* function Article({ article }) {
+function Article({ article }) {
   return (
     <Card as="article">
       <Card.Title href={`/articles/${article.slug}`}>
@@ -47,7 +47,7 @@ import { formatDate } from '@/lib/formatDate'
       <Card.Cta>Read article</Card.Cta>
     </Card>
   )
-} */
+}
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
@@ -57,7 +57,7 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
-/* function Newsletter() {
+function Newsletter() {
   return (
     <form
       action="/thank-you"
@@ -84,7 +84,7 @@ function SocialLink({ icon: Icon, ...props }) {
       </div>
     </form>
   )
-} */
+}
 
 function Resume() {
   let resume = [
@@ -152,7 +152,7 @@ function Resume() {
   )
 }
 
-/* function Education() {
+function Education() {
   let education = [
     {
       school: 'Shenyang Normal University',
@@ -205,7 +205,7 @@ function Resume() {
       </ol>
     </div>
   )
-} */
+}
 
 /* function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2', '-rotate-2']
@@ -315,15 +315,15 @@ export default function Home({ articles }) {
       <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
+          {/* <div className="flex flex-col gap-16">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
-          </div>
+          </div> */}
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            {/* <Newsletter /> */}
             <Resume />
-            <Education />
+            {/* <Education /> */}
           </div>
         </div>
       </Container>

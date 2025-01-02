@@ -8,6 +8,16 @@ import { Link, FolderGit2 } from 'lucide-react'
 
 const projects = [
   {
+    name: 'Free Open Graph Image Generator',
+    description:
+      "Use this free Open Graph image generator to create beautiful images for your website, blog, or X (Twitter) profile with zero effort.",
+    link: {
+      href: 'https://og.dakaiai.app/',
+      label: 'https://og.dakaiai.app/',
+    },
+    // logo: youphoria,
+  },
+  {
     name: 'Turn Office file to Markdown',
     description:
       "A browser-based web app built with Next.js, using the Markitdown library to convert Office files to Markdown effortlessly.",

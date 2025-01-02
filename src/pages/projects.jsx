@@ -37,6 +37,16 @@ const projects = [
     },
     // logo: youphoria,
   },
+  {
+    name: 'ASN CN',
+    description:
+      "Fetch ASN CN data from bgp.he.net and whois.ipip.net, updated daily.",
+    link: {
+      href: 'https://github.com/budaobu/rules',
+      label: 'https://github.com/budaobu/rules',
+    },
+    // logo: youphoria,
+  },
 ]
 
 export default function Projects() {

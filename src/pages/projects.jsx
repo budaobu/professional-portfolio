@@ -8,6 +8,16 @@ import { Link, FolderGit2 } from 'lucide-react'
 
 const projects = [
   {
+    name: 'Image Watermark',
+    description:
+      "Add watermarks to your images securely with no internet needed! Protect sensitive documents like IDs, driver’s licenses, and passports locally on your device.",
+    link: {
+      href: 'https://image-watermark-at5.pages.dev/',
+      label: 'https://image-watermark-at5.pages.dev/',
+    },
+    // logo: youphoria,
+  },
+  {
     name: 'Free Open Graph Image Generator',
     description:
       "Use this free Open Graph image generator to create beautiful images for your website, blog, or X (Twitter) profile with zero effort.",

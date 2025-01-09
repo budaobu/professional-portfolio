@@ -83,8 +83,6 @@ export default function About() {
             <ul role="list">
               <SocialLink
                 href="https://x.com/intent/follow?screen_name=lizhaoshui"
-                target="_blank"
-                rel="noopener noreferrer"
                 icon={(iconProps) => (
                   <XLogo 
                     size={24} 
@@ -101,8 +99,6 @@ export default function About() {
               </SocialLink> */}
               <SocialLink
                 href="#"
-                target="_blank"
-                rel="noopener noreferrer"
                 icon={(iconProps) => (
                   <GithubLogo 
                     size={24} 
@@ -131,8 +127,6 @@ export default function About() {
               </SocialLink> */}
               <SocialLink
                 href="mailto:lizhaoshui@duck.com"
-                target="_blank"
-                rel="noopener noreferrer"
                 icon={(iconProps) => (
                   <EnvelopeSimple 
                     size={24} 

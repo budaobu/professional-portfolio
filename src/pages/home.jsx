@@ -289,11 +289,15 @@ export default function Home({ articles }) {
               href="https://x.com/intent/follow?screen_name=lizhaoshui"
               aria-label="Follow on X"
               icon={XLogo}
+              target="_blank"
+              rel="noopener noreferrer"
             />
             <SocialLink
               href="/rss/feed.xml"
               aria-label="RSS feed"
               icon={Atom}
+              target="_blank"
+              rel="noopener noreferrer"
             />
             {/* <SocialLink
               href="https://github.com/"
@@ -309,6 +313,8 @@ export default function Home({ articles }) {
               href="https://buymeacoffee.com/lizhaoshui"
               aria-label="Buy me a coffee"
               icon={Coffee}
+              target="_blank"
+              rel="noopener noreferrer"
             />
           </div>
         </div>

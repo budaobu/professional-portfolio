@@ -91,6 +91,8 @@ export default function About() {
                     {...iconProps}
                   />
                 )}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Follow on X
               </SocialLink>
@@ -107,6 +109,8 @@ export default function About() {
                     {...iconProps}
                   />
                 )}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-4"
               >
                 Follow on GitHub
@@ -135,6 +139,8 @@ export default function About() {
                     {...iconProps}
                   />
                 )}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
                 lizhaoshui@duck.com

@@ -15,7 +15,6 @@ const projects = [
       href: 'https://image-watermark-at5.pages.dev/',
       label: 'https://image-watermark-at5.pages.dev/',
     },
-    // logo: youphoria,
   },
   {
     name: 'Free Open Graph Image Generator',
@@ -25,7 +24,6 @@ const projects = [
       href: 'https://og.dakaiai.app/',
       label: 'https://og.dakaiai.app/',
     },
-    // logo: youphoria,
   },
   {
     name: 'Turn Office file to Markdown',
@@ -35,7 +33,6 @@ const projects = [
       href: 'https://markitdown.dakaiai.app/',
       label: 'https://markitdown.dakaiai.app/',
     },
-    // logo: youphoria,
   },
   {
     name: '买电车还是油车',
@@ -45,7 +42,6 @@ const projects = [
       href: 'https://fuel-or-elec-car.dakaiai.app/',
       label: 'https://fuel-or-elec-car.dakaiai.app/',
     },
-    // logo: youphoria,
   },
   {
     name: 'ASN CN',
@@ -66,12 +62,12 @@ export default function Projects() {
         <title>Projects - Jeoy Hu</title>
         <meta
           name="description"
-          content="The bridges I've tried to build between ideas and action."
+          content="What I've done and what I'm doing."
         />
       </Head>
       <SimpleLayout
-        title="Digital playground, turning creativity into reality."
-        intro="Rapid prototypes engineered through creative problem-solving and AI collaboration."
+        title="My past and present work."
+        intro="I&apos;ve worked on a variety of projects during my career, from websites to mobile apps, but here are a few that I&apos;ve worked on in collaboration with AI."
       >
         <ul
           role="list"

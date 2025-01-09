@@ -19,6 +19,7 @@ import {
   GithubLogo,
   TelegramLogo,
   LinkedinLogo,
+  Atom,
   Coffee,
 } from '@phosphor-icons/react'
 import image1 from '@/images/photos/image-1.jpg'
@@ -289,15 +290,15 @@ export default function Home({ articles }) {
               aria-label="Follow on X"
               icon={XLogo}
             />
+            <SocialLink
+              href="/rss/feed.xml"
+              aria-label="RSS feed"
+              icon={Atom}
+            />
             {/* <SocialLink
               href="https://github.com/"
               aria-label="Follow on GitHub"
               icon={GithubLogo}
-            />
-            <SocialLink
-              href="https://linkedin.com/"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedinLogo}
             /> */}
             {/* <SocialLink
               href="https://www.instagram.com/"

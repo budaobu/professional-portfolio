@@ -151,6 +151,8 @@ module.exports = {
             borderRadius: theme('borderRadius.lg'),
             paddingLeft: theme('spacing.1'),
             paddingRight: theme('spacing.1'),
+            whiteSpace: 'pre-wrap',
+            wordBreak: 'break-word',
           },
           'a code': {
             color: 'inherit',
@@ -223,6 +225,8 @@ module.exports = {
             overflowX: 'auto',
             border: '1px solid',
             borderColor: 'var(--tw-prose-pre-border)',
+            whiteSpace: 'pre-wrap',
+            wordBreak: 'break-word',
           },
           'pre code': {
             display: 'inline',
@@ -232,6 +236,8 @@ module.exports = {
             backgroundColor: 'transparent',
             borderRadius: 0,
             padding: 0,
+            whiteSpace: 'pre-wrap',
+            wordBreak: 'break-word',
           },
 
           // Horizontal rules

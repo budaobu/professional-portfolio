@@ -30,6 +30,7 @@ const withMDX = nextMDX({
   options: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [rehypePrism],
+    providerImportSource: '@mdx-js/react', // 添加这一行以支持 MDXProvider
   },
 })
 

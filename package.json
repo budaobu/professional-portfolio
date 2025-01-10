@@ -16,6 +16,7 @@
     "@next/mdx": "^12.2.3",
     "@phosphor-icons/react": "^2.1.7",
     "@tailwindcss/typography": "^0.5.4",
+    "@mdx-js/react": "^1.6.3",
     "autoprefixer": "^10.4.7",
     "clsx": "^1.2.0",
     "fast-glob": "^3.2.11",

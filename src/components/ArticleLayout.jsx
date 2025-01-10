@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-
+import { MDXProvider } from '@mdx-js/react'
 import { ArrowLeft } from 'lucide-react'
 import { Container } from '@/components/Container'
 import { formatDate } from '@/lib/formatDate'
 import { Prose } from '@/components/Prose'
-
+import { MDXComponents } from '@/components/MDXComponents'
 
 export function ArticleLayout({
   children,
@@ -51,7 +51,11 @@ export function ArticleLayout({
                   <span className="ml-3">{formatDate(meta.date)}</span>
                 </time>
               </header>
-              <Prose className="mt-8">{children}</Prose>
+              <Prose className="mt-8">
+                <MDXProvider components={MDXComponents}>
+                  {children}
+                </MDXProvider>
+              </Prose>
             </article>
           </div>
         </div>

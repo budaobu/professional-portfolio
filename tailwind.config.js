@@ -222,6 +222,7 @@ module.exports = {
             backgroundColor: 'var(--tw-prose-pre-bg)',
             borderRadius: theme('borderRadius.3xl'),
             padding: theme('spacing.8'),
+            paddingRight: theme('spacing.16'), // 为复制按钮留出空间
             overflowX: 'auto',
             border: '1px solid',
             borderColor: 'var(--tw-prose-pre-border)',

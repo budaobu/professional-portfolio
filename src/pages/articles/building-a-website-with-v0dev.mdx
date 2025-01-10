@@ -1,0 +1,258 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Joey Hu',
+  date: '2025-01-10',
+  title: 'Build a Watermark Generator Tool with v0.dev – Add Watermarks to Images Easily',
+  description:
+    'Learn how to create a powerful image watermarking tool using v0.dev. This step-by-step guide will show you how to build a watermark generator using Next.js, sharp, and formidable. Add text and logo watermarks to images and deploy the app in no time.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+在 v0 中创建 New Chat，向v0提出开发需求。
+
+第一轮输入我已经编辑好的提示词：
+
+```
+# Next.js Development Expert Prompt
+
+You are an expert Next.js developer and consultant with deep experience in building, optimizing, and scaling web applications. Your expertise covers performance optimization, SEO best practices, and advanced Next.js features implementation.
+
+## Core Competencies
+
+- Building scalable and SEO-friendly Next.js applications
+- Implementing server-side rendering (SSR) and static site generation (SSG)
+- Performance optimization and best practices
+- TypeScript integration and type safety
+- Modern UI development with TailwindCSS and shadcn
+- Internationalization and localization
+- SEO optimization and analytics integration
+
+## Development Workflow
+
+1. Requirements Analysis
+   - Thoroughly understand project requirements and goals
+   - Identify key technical requirements and constraints
+   - Plan architecture and component structure
+
+2. Technical Implementation
+   - Set up project foundation with specified technologies
+   - Implement core features and functionality
+   - Ensure type safety and code quality
+   - Create reusable components and utilities
+
+3. Optimization & Enhancement
+   - Implement performance optimizations
+   - Add SEO features and meta tags
+   - Set up analytics and monitoring
+   - Ensure responsive design and accessibility
+
+4. Documentation & Deployment
+   - Create comprehensive documentation
+   - Set up configuration files
+   - Prepare deployment settings
+   - Maintain operation logs
+
+## Product requirements
+- product name: 图片加水印
+- primary keyword: 图片加水印
+- version: 1.0.0
+- author: Joey Hu
+- homepage: https://portfolio-aay.pages.dev/home
+
+### Product functional requirements
+
+- 考虑用于图片中可能的隐私安全，本项目将基于浏览器端处理水印，而不是将图片上传到服务器处理水印
+- 上传单张图片
+- 可选是否将水印平铺于图片
+    - 是：水印铺满整张图片
+    - 否：之增加单一水印
+若选择平铺：
+- 输入水印文字（默认：仅供 xxx 验证使用）
+- 水印透明度：0~100
+- 水印大小：0~100
+- 水印颜色（color-picker）
+- 水印间距：0~100
+- 水印倾斜角度：-90度~90度
+
+如未选择平铺：
+- 输入水印文字（默认：仅供 xxx 验证使用）
+- 水印透明度：0~100
+- 水印大小：0~100
+- 水印颜色（color-picker）
+- 水印倾斜角度：-90度~90度
+- 水印位置（左右）：0~{{图片宽度}}
+- 水印位置（上下）：0~{{图片高度}}
+
+增加CTA：
+我们提供一种安全的方法，让您可以在本地设备上为您的图片添加水印，无需任何网络连接。这是保护您敏感证件（如身份证、驾照、护照等）隐私的理想选择。
+
+## Technical Stack
+
+### Core Dependencies
+
+- next@15.1.3
+- pnpm@9.15.3
+- typescript@5.7.2
+- @types/react@19.0.3
+- @types/node@22.10.5
+- @types/next-pwa@5.6.9
+- tailwindcss@3.4.17
+- shadcn/ui@latest
+
+### UI Components & Styling
+
+- shadcn/ui
+- Icons: @phosphor-icons/react v2.1.7 or lucide-react v0.469.0
+- embla-carousel
+- react-loading-skeleton or react-content-loader
+- next-themes
+
+### Content & Data Management
+
+- MDX Support: @next/mdx v15.1.3 or next-mdx-enhanced v5.0.0
+- Remote MDX: next-mdx-remote v5.0.0
+- Data Fetching: SWR
+- Date Formatting: little-date
+- RSS Generation: next-rss
+
+### SEO & Analytics
+
+- next-seo@latest
+- Open Graph Images: @vercel/og@latest
+- Sitemap Generation: next-sitemap
+- Google Analytics Integration
+- Google AdSense Integration
+
+### Internationalization
+
+- next-i18next@latest
+- Support for:
+  - English (en-US)
+  - Chinese (zh-CN)
+
+### Required Components
+1. Theme Switcher
+2. Language Switcher
+3. Toast Notifications: sonner@latest
+4. Loading Skeletons
+5. Image Carousel
+6. Search Component
+7. Pagination
+8. Share Buttons
+9. MDX Components:
+   - Aside
+   - CodeBlock auto-wrap
+   - Code Syntax Highlighting
+   - Callout
+   - MdxCard
+   - ThemeAwareImage
+
+### Configuration Files
+
+- next.config.js
+- package.json
+- tailwind.config.js
+- tsconfig.json
+- postcss.config.js
+- .gitignore
+- .prettierrc
+- .env.production
+- .env.local
+- robots.txt
+- manifest.ts
+- site.ts
+
+### Pages & Routes
+
+1. Home Page
+2. About Page
+3. Privacy Policy
+4. 404 Error Page
+5. Article Pages
+
+### Environment Variables
+
+- NEXT_PUBLIC_BASE_URL=
+- NEXT_PUBLIC_BASE_API_URL=
+- NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=
+- NEXT_PUBLIC_GOOGLE_TAG_MANAGER=
+
+### Required Features
+
+- Dark/Light Mode Toggle
+- Multilingual Support
+- Responsive Design
+- SEO Optimization
+- Performance Monitoring
+- Analytics Integration
+- RSS Feed Generation
+- Social Media Integration
+- Code Syntax Highlighting
+- Image Optimization
+- Request Validation
+- Error Handling
+
+### Footer Elements
+
+- Copyright Information
+- Product Name & Slogan
+- "Built by [name] with v0.dev"
+- Donate Link (buymeacoffee.com/lizhaoshui)
+
+## Deliverables
+
+- Complete source code
+- Configuration files
+- Documentation (README.md)
+- Operation log
+```
+
+对生成的页面布局不满意，于是继续提出要求：
+
+```
+两列布局：
+- 左列为操作区
+- 右列:
+    - 上传图片（可点击选择或拖拽上传）后立即显示用户选择的图片预览
+    - 实时预览图片水印效果
+    - 按钮：下载图片
+```
+
+对"上传图片"后的效果不满意，继续：
+
+```
+在上传后显示的图片上实时预览水印效果就可以了，不需要再显示一次图片。
+将平铺水印选项放在第一项。
+将水印颜色字段的位置移动到水印文字下方。
+```
+
+接下来对水印配置进行调整：
+
+```
+水印颜色也可以直接输入色值。 水印透明度、水印大小、水印倾斜角度、水印位置（左右）、水印位置（上下）这几个选项在调整参数值时，应以tips形式显示当前所选择的值。 左侧增加一个次要按钮：重置，点击后将所有输入值都恢复为初始设定。
+```
+
+继续要求增加底部信息：
+
+```
+Add the product name and slogan to the footer.
+Add the copyright information to the footer.
+Add a donate link to the header and footer that redirects to the Buy Me a Coffee page(https://buymeacoffee.com/lizhaoshui).
+Add a "Build by {{your name}} with {{v0.dev}}" link to the footer.
+```
+
+对头部信息进行调整：
+
+```
+我希望左上角使用圆形图片logo而不是直接显示网站名称的文本
+```
+
+调整按钮：
+
+```
+将layout.tsx和footer.tsx中的Donate按钮修改为 Buy me a coffee icon button
+```
+
+![TinySnap-2025-01-10-12.02.19.png](https://img.dakaiai.app/file/AgACAgEAAyEGAASJ9vGyAAMSZ4Cx7TxRNW4rH-hEvV1WabuM9nwAAgSuMRsIzghEBCVN_mOg0tABAAMCAAN3AAM2BA.png)

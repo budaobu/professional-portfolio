@@ -4,6 +4,7 @@ import rehypePrism from 'rehype-prism-plus'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  transpilePackages: ['@phosphor-icons/react'],
   pageExtensions: ['jsx', 'mdx'],
   reactStrictMode: true,
   swcMinify: true,

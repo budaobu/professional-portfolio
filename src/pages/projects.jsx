@@ -26,15 +26,6 @@ const projects = [
     },
   },
   {
-    name: 'Turn Office file to Markdown',
-    description:
-      "A browser-based web app built with Next.js, using the Markitdown library to convert Office files to Markdown effortlessly.",
-    link: {
-      href: 'https://markitdown.dakaiai.app/',
-      label: 'Office to Markdown',
-    },
-  },
-  {
     name: 'Fuel or Elec Car',
     description:
       "A tool to help users decide between gas or electric cars by considering factors like annual mileage, charging conditions, and usage scenarios.",
@@ -48,7 +39,7 @@ const projects = [
     description:
       "Claude-generated Python program to fetch daily ASN CN data from bgp.he.net and whois.ipip.net.",
     link: {
-      href: 'https://github.com/budaobu/rules',
+      href: 'https://github.com/budaobu/rules/blob/main/lists/cn_asn.list',
       label: 'ASN CN Data Fetcher',
     },
     // logo: youphoria,

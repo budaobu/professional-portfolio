@@ -87,7 +87,6 @@ export default function About() {
                   <XLogo 
                     size={24} 
                     color="#a1a1aa" 
-                    weight="duotone"
                     {...iconProps}
                   />
                 )}
@@ -103,7 +102,6 @@ export default function About() {
                   <GithubLogo 
                     size={24} 
                     color="#a1a1aa" 
-                    weight="duotone"
                     {...iconProps}
                   />
                 )}
@@ -117,7 +115,6 @@ export default function About() {
                   <LinkedinLogo 
                     size={24} 
                     color="#a1a1aa" 
-                    weight="duotone"
                     {...iconProps}
                   />
                 )}
@@ -131,7 +128,6 @@ export default function About() {
                   <EnvelopeSimple 
                     size={24} 
                     color="#a1a1aa" 
-                    weight="duotone"
                     {...iconProps}
                   />
                 )}

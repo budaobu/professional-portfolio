@@ -53,7 +53,7 @@ function Article({ article }) {
 function SocialLink({ icon: Icon, ...props }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
-      <Icon size={24} color="#a1a1aa" weight="duotone" className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+      <Icon size={24} color="#a1a1aa" className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
   )
 }
@@ -65,7 +65,7 @@ function Newsletter() {
       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <EnvelopeSimple size={24} color="#a1a1aa" weight="duotone" className="h-6 w-6 flex-none" />
+        <EnvelopeSimple size={24} color="#a1a1aa" className="h-6 w-6 flex-none" />
         <span className="ml-3">Stay up to date</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
@@ -108,14 +108,14 @@ function Resume() {
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <Briefcase size={24} color="#a1a1aa" weight="duotone" className="h-6 w-6 flex-none" />
+        <Briefcase size={24} color="#a1a1aa" className="h-6 w-6 flex-none" />
         <span className="ml-3">Work</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <role.logo size={24} color="#a1a1aa" weight="duotone" className="h-6 w-6 rounded-full" />
+              <role.logo size={24} color="#a1a1aa" className="h-6 w-6 rounded-full" />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
@@ -147,7 +147,7 @@ function Resume() {
       </ol>
       {/* <Button href="#" variant="secondary" className="group mt-6 w-full">
         Download CV
-        <DownloadSimple size={24} color="#a1a1aa" weight="duotone" className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+        <DownloadSimple size={24} color="#a1a1aa" className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button> */}
     </div>
   )
@@ -167,14 +167,14 @@ function Education() {
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <GraduationCap size={24} color="#a1a1aa" weight="duotone" className="h-6 w-6 flex-none" />
+        <GraduationCap size={24} color="#a1a1aa" className="h-6 w-6 flex-none" />
         <span className="ml-3">Education</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {education.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <role.logo size={24} color="#a1a1aa" weight="duotone" className="h-7 w-7 rounded-full" />
+              <role.logo size={24} color="#a1a1aa" className="h-7 w-7 rounded-full" />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">School</dt>

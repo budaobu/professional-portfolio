@@ -22,7 +22,7 @@ const projects = [
       "Use this free Open Graph image generator to create beautiful images for your website, blog, or X (Twitter) profile with zero effort.",
     link: {
       href: 'https://og.dakaiai.app/',
-      label: 'Open Grapg Image',
+      label: 'Open Graph Image',
     },
   },
   {

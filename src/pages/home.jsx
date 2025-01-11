@@ -212,8 +212,8 @@ function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2', '-rotate-2']
 
   return (
-    <div className="mt-16 sm:mt-20 relative">
-      <div className="relative">
+    <div className="mt-16 sm:mt-20">
+      
         <div className="-my-4 flex flex-nowrap justify-start gap-5 overflow-x-auto overflow-hidden py-4 sm:gap-8 scrollbar-hide">
           {[image1, image2, image3, image4, image5, image6].map((image, imageIndex) => (
             <div
@@ -234,7 +234,7 @@ function Photos() {
           </div>
         <div className="absolute left-0 top-0 bottom-0 w-1/12 bg-gradient-to-r from-white to-transparent dark:from-zinc-900"></div>
         <div className="absolute right-0 top-0 bottom-0 w-1/12 bg-gradient-to-l from-white to-transparent dark:from-zinc-900"></div>
-      </div>
+      
     </div>
   )
 }

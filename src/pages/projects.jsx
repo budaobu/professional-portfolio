@@ -13,7 +13,7 @@ const projects = [
       "Add watermarks to your images securely with no internet needed! Protect sensitive documents like IDs, driver’s licenses, and passports locally on your device.",
     link: {
       href: 'https://image-watermark-at5.pages.dev/',
-      label: 'https://image-watermark-at5.pages.dev/',
+      label: 'Watermark',
     },
   },
   {
@@ -22,7 +22,7 @@ const projects = [
       "Use this free Open Graph image generator to create beautiful images for your website, blog, or X (Twitter) profile with zero effort.",
     link: {
       href: 'https://og.dakaiai.app/',
-      label: 'https://og.dakaiai.app/',
+      label: 'Open Grapg Image',
     },
   },
   {
@@ -31,16 +31,16 @@ const projects = [
       "A browser-based web app built with Next.js, using the Markitdown library to convert Office files to Markdown effortlessly.",
     link: {
       href: 'https://markitdown.dakaiai.app/',
-      label: 'https://markitdown.dakaiai.app/',
+      label: 'Office to Markdown',
     },
   },
   {
-    name: '买电车还是油车',
+    name: 'Fuel or Elec Car',
     description:
-      "一个帮助用户决定是否购买电动汽车的工具。通过考虑多个因素，如年行驶里程、充电条件、使用场景等，为用户提供建议。",
+      "A tool to help users decide between gas or electric cars by considering factors like annual mileage, charging conditions, and usage scenarios.",
     link: {
       href: 'https://fuel-or-elec-car.dakaiai.app/',
-      label: 'https://fuel-or-elec-car.dakaiai.app/',
+      label: 'Car Purchase Decision',
     },
   },
   {
@@ -48,8 +48,8 @@ const projects = [
     description:
       "Fetch ASN CN data from bgp.he.net and whois.ipip.net, updated daily.",
     link: {
-      href: 'https://github.com/budaobu/rules',
-      label: 'https://github.com/budaobu/rules',
+      href: 'Claude-generated Python program to fetch daily ASN CN data from bgp.he.net and whois.ipip.net.',
+      label: 'ASN',
     },
     // logo: youphoria,
   },

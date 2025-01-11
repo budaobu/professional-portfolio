@@ -115,7 +115,7 @@ function Resume() {
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <role.logo size={24} color="#a1a1aa" weight="duotone" className="h-7 w-7 rounded-full" />
+              <role.logo size={24} color="#a1a1aa" weight="duotone" className="h-6 w-6 rounded-full" />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>

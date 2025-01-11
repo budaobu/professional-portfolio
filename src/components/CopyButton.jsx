@@ -12,7 +12,7 @@ export function CopyButton({ text }) {
 
   return (
     <button
-      className="absolute right-4 top-4 z-20 h-8 w-8 rounded border border-gray-300 bg-white/50 p-1.5 backdrop-blur-sm hover:bg-white/80"
+      className="absolute right-4 top-4 z-20 h-7 w-7 rounded border border-gray-300 bg-white/50 p-1.5 backdrop-blur-sm hover:bg-white/80"
       onClick={copy}
     >
       {copied ? (

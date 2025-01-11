@@ -46,10 +46,10 @@ const projects = [
   {
     name: 'ASN CN',
     description:
-      "Fetch ASN CN data from bgp.he.net and whois.ipip.net, updated daily.",
+      "Claude-generated Python program to fetch daily ASN CN data from bgp.he.net and whois.ipip.net.",
     link: {
-      href: 'Claude-generated Python program to fetch daily ASN CN data from bgp.he.net and whois.ipip.net.',
-      label: 'ASN',
+      href: 'https://github.com/budaobu/rules',
+      label: 'ASN CN Data Fetcher',
     },
     // logo: youphoria,
   },

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import clsx from 'clsx'
-import { ChevronRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 
 export function Card({ as: Component = 'div', className, children }) {
@@ -48,7 +48,7 @@ Card.Cta = function CardCta({ children }) {
       className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500"
     >
       {children}
-      <ChevronRight size={16} strokeWidth={1.5} className="ml-1 h-4 w-4 stroke-current" />
+      <ArrowRight size={16} strokeWidth={1.5} className="ml-1 h-4 w-4 stroke-current" />
     </div>
   )
 }

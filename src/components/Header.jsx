@@ -6,10 +6,10 @@ import clsx from 'clsx'
 
 import {
   X,
-  List,
+  ChevronDown,
   Sun,
-  MoonStars,
-} from '@phosphor-icons/react'
+  MoonStar,
+} from 'lucide-react'
 import { Container } from '@/components/Container'
 import avatarImage from '@/images/avatar.jpg'
 import { Fragment, useEffect, useRef } from 'react'
@@ -30,7 +30,7 @@ function MobileNavigation(props) {
     <Popover {...props}>
       <Popover.Button className="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20">
         Menu
-        <List size={24} strokeWidth={1.5} className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
+        <ChevronDown size={24} strokeWidth={1.5} className="ml-3 h-auto w-4 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
       </Popover.Button>
       <Transition.Root>
         <Transition.Child
@@ -148,7 +148,7 @@ function ModeToggle() {
       onClick={toggleMode}
     >
       <Sun size={24} strokeWidth={1.5} className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600" />
-      <MoonStars size={24} strokeWidth={1.5} className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500" />
+      <MoonStar size={24} strokeWidth={1.5} className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500" />
     </button>
   )
 }

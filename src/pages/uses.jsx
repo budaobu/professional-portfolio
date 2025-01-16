@@ -46,12 +46,12 @@ export default function Uses() {
         <title>Uses - Joey Hu</title>
         <meta
           name="description"
-          content="Here’s a big list of all of my favorite stuff."
+          content="The technologies & products I use daily for building projects and managing my life."
         />
       </Head>
       <SimpleLayout
-        title="Here’s a big list of all of my favorite stuff."
-        intro="This is my curated list of software, hardware, and gadgets that I rely on to stay on track with my work—or at least, pretend to. These are my top picks for productivity and creativity."
+        title="Uses"
+        intro="The technologies & products I use daily for building projects and managing my life."
       >
         <div className="space-y-20">
           <ToolsSection title="Workstation">
@@ -59,12 +59,13 @@ export default function Uses() {
               title="MacBook Pro (2015)" 
               href="https://u.jd.com/urou5Nl"
               description="I have used this Macbook Pro for more than 9 years. Maybe it should be retired, but it still works."
+              image="https://img.dakaiai.app/file/AgACAgEAAyEGAASJ9vGyAAMVZ4iliAOD1rmolqbrL4hajoGDnrgAAt2wMRsgQklEgh8ctQggzWcBAAMCAAN4AAM2BA.jpg"
             />
             <Appearance
               title="iPhone 14"
               href="https://u.jd.com/uGouHqR"
               description="I primarily use an iPhone 14, which combines powerful performance, advanced camera features, and a sleek design."
-              image="https://img.dakaiai.app/file/AgACAgEAAyEGAASJ9vGyAAMTZ4icFlnaHbtCzrS3DbCNLsdndWwAAtmwMRsgQklEtpozHVlZPEsBAAMCAANtAAM2BA.png"
+              image="https://img.dakaiai.app/file/AgACAgEAAyEGAASJ9vGyAAMUZ4iksk2_rVY4A5xglQABIrtPDhZzAALbsDEbIEJJRItmmqsZ4CjaAQADAgADbQADNgQ.png"
             />
             <Appearance
               title="Redmi Note 10 Pro"

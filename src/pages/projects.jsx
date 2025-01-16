@@ -57,8 +57,8 @@ export default function Projects() {
         />
       </Head>
       <SimpleLayout
-        title="My past and present work."
-        intro="I&apos;ve worked on a variety of projects during my career, from websites to mobile apps, but here are a few that I&apos;ve worked on in collaboration with AI."
+        title="Projects"
+        intro="What I&apos;ve done and what I&apos;m doing."
       >
         <ul
           role="list"

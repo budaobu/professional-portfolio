@@ -16,7 +16,7 @@ const projects = [
       label: 'Watermark',
     },
   },
-  {
+  {/* {
     name: 'Free Open Graph Image Generator',
     description:
       "Use this free Open Graph image generator to create beautiful images for your website, blog, or X (Twitter) profile with zero effort.",
@@ -24,7 +24,7 @@ const projects = [
       href: 'https://og.dakaiai.app/',
       label: 'Open Graph Image',
     },
-  },
+  }, */}
   {
     name: 'Fuel or Elec Car',
     description:

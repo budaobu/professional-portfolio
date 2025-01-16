@@ -29,15 +29,7 @@ function Appearance({ title, href, description, image, cta = "Check it out here"
         )}
       </Card.Title>
       <Card.Description>{description}</Card.Description>
-      {image && (
-        <div className="absolute top-1/2 right-0 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <img
-            src={image}
-            alt={title}
-            className="w-24 h-24 object-cover transform group-hover:scale-110 transition-transform duration-300"
-          />
-        </div>
-      )}
+      {image && <Card.Image src={image} alt={title} />}
       {href && (
         <Card.Cta>
           {cta}

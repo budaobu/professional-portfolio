@@ -88,7 +88,7 @@ Card.Image = function CardImage({ src, alt }) {
       <img
         src={src}
         alt={alt}
-        className="w-24 h-24 object-cover transform group-hover:scale-110 transition-transform duration-300"
+        className="max-w-24 max-h-24 object-contain transform group-hover:scale-110 transition-transform duration-300"
       />
     </div>
   )

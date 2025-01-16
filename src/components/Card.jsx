@@ -35,7 +35,7 @@ Card.Title = function CardTitle({ as: Component = 'h2', href, children }) {
 
 Card.Description = function CardDescription({ children }) {
   return (
-    <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400 pr-24">
+    <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400 pr-16">
       {children}
     </p>
   )
@@ -84,7 +84,7 @@ Card.Eyebrow = function CardEyebrow({
 
 Card.Image = function CardImage({ src, alt }) {
   return (
-    <div className="absolute top-1/2 right-4 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+    <div className="absolute top-1/2 right-2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
       <img
         src={src}
         alt={alt}

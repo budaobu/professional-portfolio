@@ -42,7 +42,7 @@ export default function About() {
         <title>About - Joey Hu</title>
         <meta
           name="description"
-          content="I'm Joey hu, a digital refugee."
+          content="I'm Joey hu, a cyber refugee."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -59,7 +59,7 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I&apos;m Joey Hu. a digital refugee.
+              I&apos;m Joey Hu. a cyber refugee.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>

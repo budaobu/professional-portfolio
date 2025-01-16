@@ -12,7 +12,7 @@ function ToolsSection({ children, ...props }) {
   )
 }
 
-function Appearance({ title, href, description, cta = "Check it out here" }) {
+function Appearance({ title, href, description, image, cta = "Check it out here" }) {
   return (
     <Card as="article">
       <Card.Title as="h3">
@@ -29,6 +29,15 @@ function Appearance({ title, href, description, cta = "Check it out here" }) {
         )}
       </Card.Title>
       <Card.Description>{description}</Card.Description>
+      {image && (
+        <div className="absolute top-1/2 right-0 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <img
+            src={image}
+            alt={title}
+            className="w-24 h-24 object-cover transform group-hover:scale-110 transition-transform duration-300"
+          />
+        </div>
+      )}
       {href && (
         <Card.Cta>
           {cta}
@@ -63,6 +72,7 @@ export default function Uses() {
               title="iPhone 14"
               href="https://u.jd.com/uGouHqR"
               description="I primarily use an iPhone 14, which combines powerful performance, advanced camera features, and a sleek design."
+              image="https://img.dakaiai.app/file/AgACAgEAAyEGAASJ9vGyAAMTZ4icFlnaHbtCzrS3DbCNLsdndWwAAtmwMRsgQklEtpozHVlZPEsBAAMCAANtAAM2BA.png"
             />
             <Appearance
               title="Redmi Note 10 Pro"

@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { useState } from 'react';
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import { Link, FolderGit2 } from 'lucide-react'
+import { Link, GithubLogo } from '@phosphor-icons/react'
 
 const projects = [
   {
@@ -65,7 +65,7 @@ export default function Projects() {
                   unoptimized
                   onError={(e) => {
                     e.currentTarget.src = '';  // Clear the image source
-                    const icon = <FolderGit2 size={32} strokeWidth={1.5} className="h-8 w-8 text-zinc-400" />; // Use FolderGit2 icon
+                    const icon = <GithubLogo size={32} strokeWidth={1.5} className="h-8 w-8 text-zinc-400" />;
                     e.currentTarget.parentElement.appendChild(icon);  // Append the icon to the image's parent element
                   }}
                   key={`favicon-${project.name}`}

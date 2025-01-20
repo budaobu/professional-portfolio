@@ -1,7 +1,5 @@
 import Image from 'next/future/image'
 import Head from 'next/head'
-import { useState } from 'react'
-import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { Link, FolderGit2, ArrowUpRight } from 'lucide-react'
 
@@ -54,57 +52,60 @@ export default function Projects() {
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
           {projects.map((project) => (
-            <Card 
-              as="li" 
-              key={project.name}
-              className="group relative h-48 overflow-hidden rounded-3xl shadow-lg transition-all duration-500 hover:shadow-xl"
-            >
-              <div className="relative z-10 flex h-full flex-col justify-between p-6">
-                {/* Icon Section */}
-                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 transition-transform duration-500 origin-top-left group-hover:scale-75">
-                  <Image
-                    src={`https://favicon.im/${project.link.href}`}
-                    alt={`${project.name} favicon`}
-                    className="h-8 w-8 rounded-full"
-                    unoptimized
-                    onError={(e) => {
-                      e.currentTarget.src = '';
-                      const icon = document.createElement('div');
-                      icon.innerHTML = '<svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" strokeWidth="1.5" fill="none" className="h-8 w-8 text-zinc-400"><path d="M3 3h18v18H3z"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>';
-                      e.currentTarget.parentElement.appendChild(icon.firstChild);
-                    }}
-                  />
-                </div>
+            <li key={project.name}>
+              <a
+                href={project.link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative h-48 w-full block rounded-3xl cursor-pointer overflow-hidden shadow-[rgba(0,_0,_0,_0.15)_0px_20px_40px_-12px] bg-card/20 p-6 ring-2 hover:ring-3 ring-zinc-900/5 dark:ring-zinc-800 transition-all duration-500 hover:ring-zinc-600/20 dark:hover:ring-zinc-700"
+              >
+                <div className="relative flex h-full w-full flex-col justify-between">
+                  {/* Icon */}
+                  <div className="size-10 origin-top-left pt-3 duration-500 group-hover:scale-75 group-hover:pt-0">
+                    <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                      <Image
+                        src={`https://favicon.im/${project.link.href}`}
+                        alt={`${project.name} favicon`}
+                        className="h-8 w-8 rounded-full"
+                        unoptimized
+                        onError={(e) => {
+                          e.currentTarget.src = '';
+                          e.currentTarget.style.display = 'none';
+                          const icon = document.createElement('div');
+                          icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-8 w-8 text-zinc-400"><path d="M3 3h18v18H3z"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>';
+                          e.currentTarget.parentElement.appendChild(icon.firstChild);
+                        }}
+                      />
+                    </div>
+                  </div>
 
-                {/* Content Section */}
-                <div className="flex flex-col transition-transform duration-500 group-hover:-translate-y-6">
-                  <h2 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100">
-                    <Card.Link href={project.link.href} target="_blank" rel="noopener noreferrer">
+                  {/* Content */}
+                  <div className="flex flex-col text-base transition-transform duration-500 group-hover:-translate-y-6">
+                    <span className="text-lg font-semibold text-zinc-800 dark:text-zinc-100">
                       {project.name}
-                    </Card.Link>
-                  </h2>
-                  <Card.Description className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                    {project.description}
-                  </Card.Description>
-                </div>
+                    </span>
+                    <span className="text-base text-balance text-zinc-600 dark:text-zinc-400">
+                      {project.description}
+                    </span>
+                  </div>
 
-                {/* Link Section */}
-                <div className="mt-6 flex items-center text-sm font-medium text-zinc-400 transition-all duration-500 group-hover:translate-y-6 dark:text-zinc-200">
-                  <Link size={20} strokeWidth={1.25} className="h-6 w-6 flex-none" />
-                  <span className="ml-2">{project.link.label}</span>
-                  <ArrowUpRight 
-                    className="ml-2 h-4 w-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100" 
-                    size={16}
-                  />
-                </div>
+                  {/* CTA Text */}
+                  <div className="pointer-events-none absolute -bottom-20 h-10 w-full text-base font-semibold transition-all duration-500 group-hover:-bottom-5 text-zinc-600 dark:text-zinc-400">
+                    {project.link.label}
+                  </div>
 
-                {/* Background Decoration */}
-                <div className="absolute inset-0 z-0">
-                  <div className="absolute -left-32 -top-32 h-64 w-64 rounded-full bg-zinc-100 opacity-0 transition-all duration-500 group-hover:opacity-10 dark:bg-zinc-800" />
-                  <div className="absolute -right-32 -bottom-32 h-64 w-64 rounded-full bg-zinc-100 opacity-0 transition-all duration-500 group-hover:opacity-10 dark:bg-zinc-800" />
+                  {/* CTA Icon */}
+                  <span className="pointer-events-none absolute h-10 bottom-10 -right-20 scale-50 transition-all duration-300 group-hover:-bottom-5 group-hover:-right-1 group-hover:scale-100">
+                    <ArrowUpRight className="text-zinc-600 dark:text-zinc-400" />
+                  </span>
+
+                  {/* Background Shapes */}
+                  <span className="pointer-events-none absolute -left-[32rem] -top-[32rem] block size-[30rem] origin-bottom-right translate-x-0 translate-y-0 transform rounded-full opacity-10 transition-all duration-300 group-hover:-left-[7rem] group-hover:-top-[10rem] bg-zinc-300 dark:bg-zinc-800" />
+                  <span className="pointer-events-none absolute bottom-0 right-0 mb-32 block size-[30rem] origin-top-left translate-x-[56rem] translate-y-[23rem] rotate-45 transform rounded-[15rem] opacity-10 transition duration-300 group-hover:rotate-90 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-zinc-200 via-zinc-700 to-zinc-800" />
+                  <span className="pointer-events-none absolute -bottom-0 -right-5 mb-32 block size-[30rem] origin-top-left translate-x-[56rem] translate-y-[23rem] rotate-45 transform rounded-[15rem] opacity-10 transition duration-300 group-hover:rotate-90 delay-75 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-zinc-200 via-zinc-700 to-zinc-800" />
                 </div>
-              </div>
-            </Card>
+              </a>
+            </li>
           ))}
         </ul>
       </SimpleLayout>

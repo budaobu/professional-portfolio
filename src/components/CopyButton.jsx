@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Check, Copy } from '@phosphor-icons/react';
+import { Check, Copy } from 'lucide-react';
 
 export function CopyButton({ text }) {
   const [copied, setCopied] = useState(false);

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import clsx from 'clsx'
-import { ArrowRight } from '@phosphor-icons/react'
+import { ArrowRight } from 'lucide-react'
 
 
 export function Card({ as: Component = 'div', className, children }) {

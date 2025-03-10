@@ -21,7 +21,7 @@ const projects = [
     description:
       "A tool to help users decide between gas or electric cars by considering factors like annual mileage, charging conditions, and usage scenarios.",
     link: {
-      href: 'https://fuel-or-elec-car.dakaiai.app/',
+      href: 'https://car-calculator.pages.dev/',
       label: 'Car Purchase Decision',
     },
   },
